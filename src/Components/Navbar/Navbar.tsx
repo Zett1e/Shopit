@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link className="hover:text-[#00994c]" to="/">
           HOME
         </Link>
-        <Link className="hover:text-[#00994c]" to="/">
+        <Link className="hover:text-[#00994c]" to="shop">
           SHOP
         </Link>
         <Link className="hover:text-[#00994c]" to="/">
