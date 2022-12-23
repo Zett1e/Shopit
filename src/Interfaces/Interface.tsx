@@ -32,5 +32,20 @@ export interface CardProp {
 
 export interface carouselItem {
   title:string;
-  image: string
+  image: string;
+  category: string
+}
+
+
+export interface CartItem {
+  id: number;
+  title: string;
+  price: number;
+  brand: string;
+  thumbnail: string;
+}
+
+export interface CartItemProp {
+  cartItem : CartItem;
+  deleteHandler: (id:number)=>void
 }

@@ -7,7 +7,7 @@ import { carouselItems } from "./CarouselItems";
 import Hero from "./Hero";
 
 const Home: FC = () => {
-  const { products } = useAppSelector((state) => state.product);
+  const  products  = useAppSelector((state) => state.product.products);
   const {getAllProduct} = useFetch();
 
 
@@ -25,14 +25,14 @@ const Home: FC = () => {
         navButtonsAlwaysInvisible={true}
       >
         {carouselItems.map((item, index) => (
-          <Hero key={index} title={item.title} image={item.image} />
+          <Hero key={index} title={item.title} image={item.image} category={item.category} />
         ))}
       </Carousel>
       <section className="feature mt-20 ">
         <h2 className="text-3xl font-bold mb-10 text-center">
           Feature Products
         </h2>
-        <div className="md:w-3/5 mx-auto flex justify-center gap-10 flex-wrap">
+        <div className=" md:w-3/5 mx-auto flex justify-center gap-10 flex-wrap">
           {products.slice(0, 6).map((product, index) => (
             <ItemCard key={index} product={product} />
           ))}

@@ -1,9 +1,9 @@
 
-import { fetchProduct, fetchCategoryProduct,fetchSearchedProduct } from "../Redux/Slices/ProductSlice";
+import { fetchProduct, fetchCategoryProduct,fetchSearchedProduct } from "../Redux/Features/ProductSlice";
 import { useAppDispatch } from "../Redux/Store";
 import { Api } from "./Api";
 import React, { FC } from "react";
-import { fetchCategories } from "../Redux/Slices/CategorySlice";
+import { fetchCategories } from "../Redux/Features/CategorySlice";
 
 
 

@@ -1,12 +1,17 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
-import categoryReducer from "./Slices/CategorySlice";
-import productReducer from "./Slices/ProductSlice";
+import categoryReducer from "./Features/CategorySlice";
+import productReducer from "./Features/ProductSlice";
+import cartReducer from './Features/CartItemSlice'
+import popupReducer from "./Features/PopupSlice";
 
 export const store = configureStore({
     reducer: {
         product : productReducer,
-        category : categoryReducer
+        category : categoryReducer,
+        cart : cartReducer,
+        popup: popupReducer
+        
     }
 })
 

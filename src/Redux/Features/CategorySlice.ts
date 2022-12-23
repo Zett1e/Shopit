@@ -1,10 +1,10 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Product } from "../../Interfaces/Interface";
 
-type categoryState = { categories: string[] };
+type categoryState = { categories: string[],toggle: boolean };
 
 const initialState: categoryState = {
   categories: [],
+  toggle: false
 };
 
 const categorySlice = createSlice({
@@ -14,8 +14,11 @@ const categorySlice = createSlice({
     fetchCategories: (state, action: PayloadAction<string[]>) => {
     state.categories = action.payload
     },
+    setToggle : (state, action: PayloadAction<boolean>) => {
+      state.toggle = action.payload
+      },
   }, 
 });
 
 export default categorySlice.reducer;
-export const { fetchCategories } = categorySlice.actions;
+export const { fetchCategories,setToggle } = categorySlice.actions;
