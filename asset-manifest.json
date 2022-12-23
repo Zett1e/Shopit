@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/shopit/static/css/main.135087da.css",
+    "main.js": "/shopit/static/js/main.55ad59e1.js",
+    "static/js/787.5eed2b99.chunk.js": "/shopit/static/js/787.5eed2b99.chunk.js",
+    "static/media/shopit-logo_black.png": "/shopit/static/media/shopit-logo_black.7a3b823cf250a552641e.png",
+    "static/media/shopit-logo_white.png": "/shopit/static/media/shopit-logo_white.1238a957d46c961de272.png",
+    "index.html": "/shopit/index.html",
+    "main.135087da.css.map": "/shopit/static/css/main.135087da.css.map",
+    "main.55ad59e1.js.map": "/shopit/static/js/main.55ad59e1.js.map",
+    "787.5eed2b99.chunk.js.map": "/shopit/static/js/787.5eed2b99.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.135087da.css",
+    "static/js/main.55ad59e1.js"
+  ]
+}
